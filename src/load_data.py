@@ -1,4 +1,3 @@
- python
 import pandas as pd
 
 URL = "https://data.ademe.fr/data-fair/api/v1/datasets/dpe-v2-tertiaire-2/lines?size=10000&format=csv&after=10000%2C965634&header=true"
