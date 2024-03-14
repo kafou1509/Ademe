@@ -3,7 +3,11 @@ Simplify original dataset
 from
 """
 
+import json
+import re
 import pandas as pd
+from collections import Counter
+from sklearn.preprocessing import OrdinalEncoder
 
 pd.options.display.max_columns = 100
 pd.options.display.max_rows = 60
@@ -11,12 +15,8 @@ pd.options.display.max_colwidth = 100
 pd.options.display.precision = 10
 pd.options.display.width = 160
 pd.set_option("display.float_format", "{:.4f}".format)
-import numpy as np
-import re
-import typing as t
-from collections import Counter
-from sklearn.preprocessing import OrdinalEncoder
-import json
+
+
 
 if __name__ == "__main__":
     file = "dpe-v2-tertiaire-2.csv"
