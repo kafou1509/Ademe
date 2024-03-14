@@ -18,7 +18,9 @@ from collections import Counter
 from sklearn.preprocessing import OrdinalEncoder
 import json
 import datetime
+import mlflow 
 
+mlflow.sklearn.autolog()
 # load data
 input_file = ("dpe_tertiaire_20240307.csv")
 data = pd.read_csv("dpe_tertiaire_20240307.csv")
