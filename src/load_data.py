@@ -8,6 +8,6 @@ assert len(data) > 0
 
 print(data.shape)
 
-OUTPUT_DATA = "./data/original/dpe-v2-tertiaire.csv"
+OUTPUT_DATA = "./data/dpe-v2-tertiaire.csv"
 
 data.to_csv(OUTPUT_DATA, index=False)
