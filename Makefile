@@ -1,15 +1,13 @@
 install:
-#install
-    pip install --upgrade pip && pip install -r requirements.txt
+	pip install --upgrade pip && pip install -r requirements.txt
 
 format:
-format
-    black /*.py
+# format
+	black -l 100 **/*.py
 
 lint:
-lint
-    pylint --disable=R,C,W0105 src//*.py
+# linting
+	pylint --disable=C0301,C0413,C0103 **/*.py
 
-test:
-test
-    pytest -vv
+
+precommit: format lint
